@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #020202;
+  cursor: crosshair;
+  overflow: hidden; /* Prevent horizontal scroll */
+}
+
+canvas {
+  display: block;
+  width: 100%; /* Make canvas responsive */
+  height: 100%; /* Make canvas responsive */
+}
+
+h1,
+h3 {
+  position: absolute;
+  color: #fff;
+  font-family: "Source Sans Pro";
+  font-weight: 900;
+  text-align: center; /* Center text horizontally */
+}
+
+h1 {
+  font-size: 5em;
+  top: 20%; /* Adjust vertical positioning */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+h3 {
+  font-size: 3em; /* Decrease font size for smaller screens */
+  top: 50%; /* Adjust vertical positioning */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* CSS media queries for responsiveness */
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 3em; /* Adjust font size for smaller screens */
+    top: 10%; /* Adjust vertical positioning for smaller screens */
+  }
+
+  h3 {
+    font-size: 2em; /* Further decrease font size for smaller screens */
+    top: 40%; /* Adjust vertical positioning for smaller screens */
+  }
+}
+
+/* Additional media queries for smaller devices */
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size: 2.5em; /* Further decrease font size for smaller devices */
+    top: 20%; /* Adjust vertical positioning for smaller devices */
+  }
+
+  h3 {
+    font-size: 2.5em; /* Further decrease font size for smaller devices */
+    top: 40%; /* Adjust vertical positioning for smaller devices */
+  }
+}
